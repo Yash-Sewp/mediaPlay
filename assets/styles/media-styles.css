@@ -42,6 +42,7 @@ body{
     text-transform: uppercase;
     color: #dd4814;
     margin: 0;
+    margin-top: 15px;
 }
 
 .copy{
@@ -97,7 +98,7 @@ body{
 }
 
 .copy-container{
-    display: none;
+    /* display: none; */
 }
 
 
@@ -165,6 +166,8 @@ ul.tb li.current-tb {
 .tb-content.current-tb {
     display: inherit;
 }
+
+
 
 
 ul.sd {
