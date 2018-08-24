@@ -20,6 +20,12 @@ body {
     max-height: 570px;
 }
 
+@media (max-width: 1440px){
+    .video-header{
+        background-size: 94%;
+    }
+}
+
 @media (max-width: 1366px){
     .video-header{
         background-size: 90%;
@@ -35,13 +41,13 @@ body {
 .content-copy {
     width: 100%;
     height: 100%;
-    max-height: 350px;
+    max-height: 300px;
     max-width: 800px;
     margin: 0 auto;
 }
 
 .heading {
-    width: 45%;
+    width: 30%;
     float: left;
 }
 
@@ -60,13 +66,13 @@ body {
 }
 
 .copy {
-    width: 55%;
+    width: 70%;
     float: right;
 }
 
 .copy > p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 .what-you-get > h1 {
@@ -74,7 +80,7 @@ body {
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 60px;
     color: #91288c;
     margin-left: 80px;
     font-weight: 800;
@@ -129,6 +135,7 @@ body {
     text-transform: uppercase;
     color: #dd4814;
     font-weight: bold;
+    min-height: 90px;
 }
 
 .card-content > p{
@@ -136,9 +143,11 @@ body {
 }
 
 .copy-container {
-    min-height: 220px;
+    min-height: 240px;
     background-color: #fff;
 }
+
+
 
 .clear {
     display: none;
@@ -160,6 +169,7 @@ body {
 .text > h1 {
     text-transform: uppercase;
     margin: 10px 0;
+    font-size: 63px;
 }
 
 .text > p{
@@ -208,6 +218,12 @@ ul.tabs li.current {
     padding: 15px;
 }
 
+.tab-content > p{
+    min-height: 80px;
+        padding-left: 40px;
+    padding-right: 70px;
+}
+
 .tab-content.current {
     display: inherit;
 }
@@ -238,6 +254,12 @@ ul.tb li.current-tb {
 .tb-content {
     display: none;
     padding: 15px;
+}
+
+.tb-content > p{
+    min-height: 80px;
+        padding-left: 40px;
+    padding-right: 70px;
 }
 
 .tb-content.current-tb {
@@ -272,6 +294,12 @@ ul.sd li.current-sd {
     padding: 15px;
 }
 
+.sd-content > p{
+    min-height: 80px;
+        padding-left: 40px;
+    padding-right: 70px;
+}
+
 .sd-content.current-sd {
     display: inherit;
 }
@@ -279,7 +307,6 @@ ul.sd li.current-sd {
 .buy_now {
     position: relative;
     display: block;
-    margin-top: 35px;
     background-color: #dd4814;
     border: none;
     color: #fff;
@@ -288,6 +315,7 @@ ul.sd li.current-sd {
     height: 40px;
     font-size: 14px;
     border-radius: 4px;
+    margin-left: 40px;
 }
 
 .center {
@@ -365,3 +393,5 @@ ul.sd li.current-sd {
     font-size: 18px;
     text-transform: normal;
 }
+
+
