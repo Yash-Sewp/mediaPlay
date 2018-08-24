@@ -1,14 +1,16 @@
-body{
+body {
     margin: 0;
 }
 
-.media-container{
+.media-container {
     margin: 0 auto;
     position: relative;
     background-color: #ececec;
+    padding-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.video-header{
+.video-header {
     background-image: url(../images/Banner_BG.png);
     background-size: 80%;
     background-position: center;
@@ -18,18 +20,24 @@ body{
     max-height: 570px;
 }
 
-.video-header > iframe {
+@media (max-width: 1366px){
+    .video-header{
+        background-size: 90%;
+    }
+}
+
+.video-header>iframe {
     margin: 0 auto;
     padding-top: 50px;
     display: block;
 }
 
-.content-copy{
+.content-copy {
     width: 100%;
     height: 100%;
     max-height: 350px;
     max-width: 800px;
-    margin:  0 auto;
+    margin: 0 auto;
 }
 
 .heading {
@@ -43,22 +51,22 @@ body{
     color: #dd4814;
     margin: 0;
     margin-top: 15px;
+    font-weight: bold;
 }
 
-.copy{
+.heading > h1 > span{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.copy {
     width: 55%;
     float: right;
 }
 
 .copy > p {
     font-size: 16px;
-    line-height: 1.2;
-
-}
-
-.what-you-get{
-    padding-left: 50px;
-    padding-right: 50px;
+    line-height: 1.5;
 }
 
 .what-you-get > h1 {
@@ -66,44 +74,111 @@ body{
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 10px;
+    margin-top: 30px;
     color: #91288c;
+    margin-left: 80px;
+    font-weight: 800;
 }
 
 .border-bottom {
     border-bottom: solid 3px #dd4814;
     width: 85px;
+    margin-left: 80px;
 }
 
-.card-container{
-    width: 100%;
+.contain {
+    text-align: center;
+    min-height: 530px;
+}
+
+.card-container {
     display: inline-flex;
     margin: 20px 0px;
+    text-align: left;
 }
 
 .card {
-    width: 33%;
+    width: 100%;
     max-width: 350px;
+    min-width: 350px;
     height: auto;
     padding: 10px;
+    position: relative;
 }
 
-.card > img {
+.card>img {
     width: 100%;
     height: 100%;
     max-height: 390px;
+    border-radius: 4px;
 }
 
-.bottom-slider > img {
+.card-content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    background-color: #fff;
+    border-radius: 4px;
+    transform: translate(6%, 0);
+    padding: 10px;
+    min-height: 290px;
+}
+
+.card-content>h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #dd4814;
+    font-weight: bold;
+}
+
+.card-content > p{
+    line-height: 1.5;
+}
+
+.copy-container {
+    min-height: 220px;
+    background-color: #fff;
+}
+
+.clear {
+    display: none;
+}
+
+.bottom-slider {
+    max-height: 650px;
+    margin: 30px 0;
+}
+
+.text {
+    position: absolute;
+    top: 225px;
+    padding-left: 20px;
+    color: #fff;
+    display: none;
+}
+
+.text > h1 {
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.text > p{
+    margin: 0;
+}
+
+.bottom-slider .slick-slide.slick-active .clear {
+    display: inline-block;
+}
+
+.bottom-slider .slick-slide.slick-active .text {
+    display: inline-block;
+}
+
+.bottom-slider>img {
     width: 100%;
 }
 
-.copy-container{
-    /* display: none; */
-}
-
-
 /* Style the tab */
-
 
 ul.tabs {
     margin: 0px;
@@ -115,28 +190,27 @@ ul.tabs li {
     background: none;
     color: #222;
     display: inline-block;
-    padding: 10px 15px;
+    padding: 15px 55px;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: solid thin #ebebeb;
 }
 
 ul.tabs li.current {
-    background: #ededed;
     color: #222;
+    border-bottom: solid medium #dd4814;
 }
 
 .tab-content {
     display: none;
-    background: #ededed;
     padding: 15px;
 }
 
 .tab-content.current {
     display: inherit;
 }
-
-
-
-
 
 ul.tb {
     margin: 0px;
@@ -148,27 +222,27 @@ ul.tb li {
     background: none;
     color: #222;
     display: inline-block;
-    padding: 10px 15px;
+    padding: 15px 55px;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: solid thin #ebebeb;
 }
 
 ul.tb li.current-tb {
-    background: #ededed;
     color: #222;
+    border-bottom: solid medium #dd4814;
 }
 
 .tb-content {
     display: none;
-    background: #ededed;
     padding: 15px;
 }
 
 .tb-content.current-tb {
     display: inherit;
 }
-
-
-
 
 ul.sd {
     margin: 0px;
@@ -180,21 +254,114 @@ ul.sd li {
     background: none;
     color: #222;
     display: inline-block;
-    padding: 10px 15px;
+    padding: 15px 55px;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: solid thin #ebebeb;
 }
 
 ul.sd li.current-sd {
-    background: #ededed;
     color: #222;
+    border-bottom: solid medium #dd4814;
 }
 
 .sd-content {
     display: none;
-    background: #ededed;
     padding: 15px;
 }
 
 .sd-content.current-sd {
     display: inherit;
+}
+
+.buy_now {
+    position: relative;
+    display: block;
+    margin-top: 35px;
+    background-color: #dd4814;
+    border: none;
+    color: #fff;
+    width: 162px;
+    text-transform: uppercase;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.center {
+    width: 900px !important;
+    margin-left: -182px !important;
+    padding: 0 20px;
+}
+
+.arrow-prev {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+    outline: 0;
+    position: absolute;
+    left: 337px;
+    bottom: 173px;
+    box-shadow: 1px 1px 1px #d6d6d6;
+    z-index: 9999;
+}
+
+.arrow-prev::after {
+    content: '<';
+    color: purple;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.arrow-next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+    outline: 0;
+    position: absolute;
+    right: 309px;
+    bottom: 173px;
+    box-shadow: 1px 1px 1px #d6d6d6;
+    z-index: 9999;
+}
+
+@media (max-width: 1440px) {
+    .arrow-next {
+        right: 120px;
+        bottom: 166px;
+    }
+    .arrow-prev {
+        left: 120px;
+        bottom: 166px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .arrow-next {
+        right: 92px;
+        bottom: 175px;
+    }
+    .arrow-prev {
+        left: 110px;
+        bottom: 175px;
+    }
+}
+
+.arrow-next::after {
+    content: '>';
+    color: purple;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.sml > span {
+    font-size: 18px;
+    text-transform: normal;
 }
