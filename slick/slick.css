@@ -78,7 +78,8 @@
 {
     display: none;
     float: left;
-    width: 900px;
+
+    height: 100%;
     min-height: 1px;
 }
 [dir='rtl'] .slick-slide
@@ -100,7 +101,6 @@
 .slick-initialized .slick-slide
 {
     display: block;
-    background-color: #ececec;
 }
 .slick-loading .slick-slide
 {
