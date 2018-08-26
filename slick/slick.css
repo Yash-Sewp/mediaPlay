@@ -82,6 +82,11 @@
     height: 100%;
     min-height: 1px;
 }
+
+.bottom-slider .slick-slide{
+    height: auto !important;
+}
+
 [dir='rtl'] .slick-slide
 {
     float: right;

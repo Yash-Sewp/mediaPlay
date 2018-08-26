@@ -202,8 +202,8 @@ body {
 
 
 .bottom-slider {
-    height: 100%;
-    min-height: 820px;
+    /* height: 100%;
+    min-height: 820px; */
 }
 
 .text {
@@ -264,10 +264,9 @@ ul.tabs li.current {
 }
 
 .tab-content > p{
-    font-size: 40px;
+    font-size: 30px;
     padding-left: 38px;
     padding-right: 38px;
-    min-height: 380px;
 
 }
 
@@ -305,12 +304,9 @@ ul.tb li.current-tb {
 }
 
 .tb-content > p{
-    font-size: 40px;    
+    font-size: 30px;    
     padding-left: 38px;
     padding-right: 38px;
-    min-height: 380px;
-
-
 }
 
 .tb-content.current-tb {
@@ -347,10 +343,9 @@ ul.sd li.current-sd {
 }
 
 .sd-content > p{
-    font-size: 40px;
+    font-size: 30px;
     padding-left: 38px;
     padding-right: 38px;
-    min-height: 380px;
 }
 
 .sd-content.current-sd {
@@ -431,3 +426,52 @@ ul.sd li.current-sd {
 }
 
 
+.accordion, .accordion2, .accordion3 {
+    background-color: #dd4814;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 50px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover, .accordion2:hover, .accordion3:hover {
+    background-color: #dd4814;
+}
+
+.accordion:after, .accordion2:after, .accordion3:after {
+    content: '\e114';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\e080";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+}
+
+.panel > p{
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 500px;
+    color: #000;
+}
+
+
+.acc {
+    margin-bottom: 60px;
+}
