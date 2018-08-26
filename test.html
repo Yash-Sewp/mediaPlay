@@ -46,6 +46,7 @@
             <div class="contain">
                 <div class="card-container">
                     <div class="what-you-get-slider">
+                        <div class="">
                         <div class="card">
                                 <img src="assets/images/Rectangle_sml.png" alt="">
                                 <div class="card-content">
@@ -56,6 +57,8 @@
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="">
                             <div class="card">
                                 <img src="assets/images/Rectangle_sml.png" alt="">
                                 <div class="card-content">
@@ -65,6 +68,8 @@
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="">
                             <div class="card">
                                 <img src="assets/images/Rectangle_sml.png" alt="">
                                 <div class="card-content">
@@ -74,6 +79,7 @@
                                     </p>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,10 +98,9 @@
                         <div class="copy-container">
                             <div class="clear">
                                 <ul class="tabs ul-a">
-                                    <li class="tab-link current" data-tab="tab-1">Product info</li>
-                                    <li class="tab-link" data-tab="tab-2">Tariff plans</li>
-                                    <li class="tab-link sml" data-tab="tab-3">faq<span>s</span></li>
-                                    <li class="tab-link sml" data-tab="tab-4">t&c<span>s</span></li>
+                                    <li class="tab-link" data-tab="tab-2">Tariff<br /> plans</li>
+                                    <li class="tab-link current" data-tab="tab-1">Product <br />info</li>
+                                    <li class="tab-link sml" data-tab="tab-3">Additional <br />information</li>
                                 </ul>
 
                                 <div id="tab-1" class="tab-content current">
@@ -138,10 +143,9 @@
                         <div class="copy-container">
                             <div class="clear">
                                 <ul class="tb">
-                                    <li class="tb-link current-tb" data-tab="tb-1">Product info</li>
-                                    <li class="tb-link" data-tab="tb-2">Tariff plans</li>
-                                    <li class="tb-link sml" data-tab="tb-3">faq<span>s</span></li>
-                                    <li class="tb-link sml" data-tab="tb-4">t&c<span>s</span></li>
+                                    <li class="tb-link" data-tab="tb-2">Tariff<br /> plans</li>
+                                    <li class="tb-link current-tb" data-tab="tb-1">Product <br />info</li>
+                                    <li class="tb-link sml" data-tab="tb-3">additional <br />information</li>
                                 </ul>
 
                                 <div id="tb-1" class="tb-content current-tb">
@@ -182,10 +186,9 @@
                         <div class="copy-container">
                             <div class="clear">
                                 <ul class="sd">
-                                    <li class="sd-link current-sd" data-tab="sd-1">Product info</li>
-                                    <li class="sd-link" data-tab="sd-2">Tariff plans</li>
-                                    <li class="sd-link sml" data-tab="sd-3">faq<span>s</span></li>
-                                    <li class="sd-link sml" data-tab="sd-4">t&c<span>s</span></li>
+                                    <li class="sd-link" data-tab="sd-2">Tariff<br /> plans</li>
+                                    <li class="sd-link current-sd" data-tab="sd-1">Product<br /> info</li>
+                                    <li class="sd-link sml" data-tab="sd-3">Additional <br />information</li>
                                 </ul>
 
                                 <div id="sd-1" class="sd-content current-sd">
@@ -227,21 +230,23 @@
 
     <script type="text/javascript">
         $('.bottom-slider').slick({
-            // centerMode: true,
-            slidesToShow: 1,
-            // variableWidth: true,
-            prevArrow: '<button class="slick-prev slick-disabled slick-arrow arrow-prev" aria-label="Previous" type="button" aria-disabled="true" style=""></button>',
-            nextArrow: '<button class="slick-next slick-disabled slick-arrow arrow-next" aria-label="Previous" type="button" aria-disabled="true" style=""></button>',
-            // infinite: true,
+            slidesToShow: 1,    
+            arrows: false,
+            centerMode: true,
+            centerPadding: '20px',
+            // prevArrow: '<button class="slick-prev slick-disabled slick-arrow arrow-prev" aria-label="Previous" type="button" aria-disabled="true" style=""></button>',
+            // nextArrow: '<button class="slick-next slick-disabled slick-arrow arrow-next" aria-label="Previous" type="button" aria-disabled="true" style=""></button>',
             //    autoplay: true,
             //    autoplaySpeed: 3000,
         });
 
         $('.what-you-get-slider').slick({
-            // centerMode: true,
             slidesToShow: 1,
-            prevArrow: '<button class="slick-prev slick-disabled slick-arrow mobi-prev" aria-label="Previous" type="button" aria-disabled="true" style=""></button>',
-            nextArrow: '<button class="slick-next slick-disabled slick-arrow mobi-next" aria-label="Previous" type="button" aria-disabled="true" style=""></button>',
+            arrows: false,
+            centerMode: true,
+            centerPadding: '10px',
+            // prevArrow: '<button class="slick-prev slick-disabled slick-arrow mobi-prev" aria-label="Previous" type="button" aria-disabled="true" style=""></button>',
+            // nextArrow: '<button class="slick-next slick-disabled slick-arrow mobi-next" aria-label="Previous" type="button" aria-disabled="true" style=""></button>',
             //    autoplay: true,
             //    autoplaySpeed: 3000,
         });
