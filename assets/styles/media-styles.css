@@ -233,7 +233,7 @@ ul.tabs li {
     
     display: inline-block;
     
-    padding: 15px 7px;
+    padding: 15px 15px;
     
     cursor: pointer;
     
@@ -279,7 +279,7 @@ ul.tb li {
     
     display: inline-block;
     
-    padding: 15px 7px;
+    padding: 15px 15px;
     
     cursor: pointer;
     
@@ -325,7 +325,7 @@ ul.sd li {
     
     display: inline-block;
     
-    padding: 15px 7px;
+    padding: 15px 15px;
     
     cursor: pointer;
     
